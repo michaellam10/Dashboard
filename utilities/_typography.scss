@@ -1,0 +1,69 @@
+// Font Smoothing
+html{
+  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Medium';
+  src: url('../fonts/MaisonNeue-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Book';
+  src: url('../fonts/MaisonNeue-Book.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-BookItalic';
+  src: url('../fonts/MaisonNeue-BookItalic.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Demi';
+  src: url('../fonts/MaisonNeue-Demi.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Bold';
+  src: url('../fonts/MaisonNeue-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-Light';
+  src: url('../fonts/MaisonNeue-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaisonNeue-LightItalic';
+  src: url('../fonts/MaisonNeue-LightItalic.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNext';
+  src: url('../fonts/AvenirNext.ttc')  format('opentype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCondensed';
+  src: url('../fonts/AvenirNext-Condensed.ttc')  format('opentype'); /* Safari, Android, iOS */
+       font-weight: normal;
+       font-style: normal;
+}

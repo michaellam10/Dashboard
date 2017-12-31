@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url("../fonts/MaisonNeue-Medium.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AvenirNext';
+  src: url("../fonts/AvenirNext.ttc") format("opentype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AvenirNextCondensed';
+  src: url("../fonts/AvenirNext-Condensed.ttc") format("opentype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal; }

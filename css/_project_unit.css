@@ -1,0 +1,113 @@
+#client-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px; }
+  #client-row .card {
+    width: 300px;
+    min-width: 300px;
+    border: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px; }
+    #client-row .card a {
+      text-decoration: none; }
+      #client-row .card a:not(.collapsed) .client-project-panel {
+        -webkit-box-shadow: 0 3px 10px 0 rgba(37, 69, 80, 0.12);
+        box-shadow: 0 3px 10px 0 rgba(37, 69, 80, 0.12);
+        z-index: 12; }
+      #client-row .card a:not(.collapsed) .client-expand-triangle {
+        opacity: 1;
+        -webkit-transition: opacity 0.35s ease 0.35s;
+        -o-transition: opacity 0.35s ease 0.35s;
+        transition: opacity 0.35s ease 0.35s; }
+  #client-row .client-project-panel {
+    width: 300px;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: solid 1px #e6e8eb;
+    position: relative;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    #client-row .client-project-panel .client-expand-triangle {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -31px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid  #e9f0f2;
+      z-index: 11;
+      opacity: 0;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+    #client-row .client-project-panel .client-logo-container .client-logo {
+      height: 70px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 15px; }
+      #client-row .client-project-panel .client-logo-container .client-logo img {
+        max-width: 100%;
+        max-height: 100%; }
+    #client-row .client-project-panel:hover {
+      -webkit-box-shadow: 0 3px 10px 0 rgba(37, 69, 80, 0.12);
+      box-shadow: 0 3px 10px 0 rgba(37, 69, 80, 0.12);
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      position: relative;
+      z-index: 11; }
+
+.client-card-data, .project-card-data {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  overflow: hidden; }
+  .client-card-data .project-completion h2, .client-card-data .project-forecast h2, .client-card-data .project-budget h2, .client-card-data .project-profit h2, .project-card-data .project-completion h2, .project-card-data .project-forecast h2, .project-card-data .project-budget h2, .project-card-data .project-profit h2 {
+    font-family: 'MaisonNeue-Light', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #8fa4af;
+    margin-bottom: 3px; }
+    .client-card-data .project-completion h2.profit-value, .client-card-data .project-forecast h2.profit-value, .client-card-data .project-budget h2.profit-value, .client-card-data .project-profit h2.profit-value, .project-card-data .project-completion h2.profit-value, .project-card-data .project-forecast h2.profit-value, .project-card-data .project-budget h2.profit-value, .project-card-data .project-profit h2.profit-value {
+      font-weight: bold; }
+      .client-card-data .project-completion h2.profit-value.profit-excellent, .client-card-data .project-forecast h2.profit-value.profit-excellent, .client-card-data .project-budget h2.profit-value.profit-excellent, .client-card-data .project-profit h2.profit-value.profit-excellent, .project-card-data .project-completion h2.profit-value.profit-excellent, .project-card-data .project-forecast h2.profit-value.profit-excellent, .project-card-data .project-budget h2.profit-value.profit-excellent, .project-card-data .project-profit h2.profit-value.profit-excellent {
+        color: #23cc99; }
+      .client-card-data .project-completion h2.profit-value.profit-moderate, .client-card-data .project-forecast h2.profit-value.profit-moderate, .client-card-data .project-budget h2.profit-value.profit-moderate, .client-card-data .project-profit h2.profit-value.profit-moderate, .project-card-data .project-completion h2.profit-value.profit-moderate, .project-card-data .project-forecast h2.profit-value.profit-moderate, .project-card-data .project-budget h2.profit-value.profit-moderate, .project-card-data .project-profit h2.profit-value.profit-moderate {
+        color: #fccb00; }
+      .client-card-data .project-completion h2.profit-value.profit-poor, .client-card-data .project-forecast h2.profit-value.profit-poor, .client-card-data .project-budget h2.profit-value.profit-poor, .client-card-data .project-profit h2.profit-value.profit-poor, .project-card-data .project-completion h2.profit-value.profit-poor, .project-card-data .project-forecast h2.profit-value.profit-poor, .project-card-data .project-budget h2.profit-value.profit-poor, .project-card-data .project-profit h2.profit-value.profit-poor {
+        color: #e72d39; }
+  .client-card-data .project-completion p, .client-card-data .project-forecast p, .client-card-data .project-budget p, .client-card-data .project-profit p, .project-card-data .project-completion p, .project-card-data .project-forecast p, .project-card-data .project-budget p, .project-card-data .project-profit p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-stretch: condensed;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #8fa4af; }

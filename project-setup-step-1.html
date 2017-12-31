@@ -1,0 +1,447 @@
+<!doctype html>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Dashboard | Clients</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="container">
+        <a class="isoflow-logo" href="#">
+          <img class="company-logo" src="images/svgs/company-profile.svg" alt="Isoflow Logo">
+        </a>
+        <div class="nav-bar-toggle-contain">
+            <button type="button" class="nav-bar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <ul id="nav-bar">
+          <li class="nav-bar-mobile-header">
+            <img id="navbar-collapse-button" src="images/svgs/close.svg" alt="Close Button" />
+            <div class="profile-dropdown">
+              <img class="profile-photo" src="images/pngs/profile_photo/profile@2x.png" alt="Profile Photo">
+              <div class="profile-dropdown-info">
+                <h1 class="profile-name">Neal</h1>
+                <!-- <h2 class="profile-position">UI Designer</h2> -->
+              </div>
+              <!-- <div class="profile-dropdown-cta">
+                <a class="profile-dropdown-icon">
+                  <img src="images/svgs/ic-profile-drop-down.svg">
+                </a>
+              </div> -->
+            </div>
+          </li>
+          <li class="nav-link">
+            <a href="#">Dashboard
+              <div class="nav-item-underline"></div>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Clients
+              <div class="nav-item-underline"></div>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Projects
+              <div class="nav-item-underline"></div>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Team Leads
+              <div class="nav-item-underline"></div>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Team Members
+              <div class="nav-item-underline"></div>
+            </a>
+          </li>
+          <li class="nav-link" id="sign-out">
+            <hr />
+            <a href="#">Sign Out</a>
+          </li>
+        </ul>
+        <div class="profile-ctas">
+          <div class="notifications">
+            <div class="notification-bubble">
+              <!-- <div class="notification-bubble-extra"></div> -->
+              <p class="notification-num">8</p>
+            </div>
+            <div class="notification-icon">
+              <img src="/images/svgs/ic-notification.svg" alt="Notification Icon">
+            </div>
+          </div>
+          <div class="profile-dropdown">
+            <img class="profile-photo" src="images/pngs/profile_photo/profile@2x.png" alt="Profile Photo">
+            <div class="profile-dropdown-info">
+              <h1 class="profile-name">Neal</h1>
+              <!-- <h2 class="profile-position">UI Designer</h2> -->
+            </div>
+            <!-- <div class="profile-dropdown-cta">
+              <a class="profile-dropdown-icon">
+                <img src="images/svgs/ic-profile-drop-down.svg">
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="project-setup-container">
+      <div class="container">
+        <div class="project-summary">
+          <div class="client-logo-container">
+            <img src="images/pngs/client_logos/without_border/justenough-logo@2x.png" alt="Client Logo">
+          </div>
+          <div class="project-summary-details">
+            <div class="summary-details-header">
+              <h2>August Retainer</h2>
+            </div>
+            <ul class="summary-details-data">
+              <li class="summary-data-category">
+                <h3>Budget <p class="data-value">150 000.00</p></h3>
+              </li>
+              <li class="summary-data-category">
+                <h3>Hours <p class="data-value">130</p></h3>
+              </li>
+            </ul>
+          </div>
+          <div class="project-summary-invoice-container">
+            <div class="no-invoice">
+              <div class="border-detail"></div>
+              <div class="info-icon">i</div>
+              <p>No Invoice Found</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-summary-collapsed" data-toggle="modal" data-target="#project-summary">
+          <div class="client-logo-container">
+            <img src="images/pngs/client_logos/without_border/justenough-logo@2x.png" alt="Client Logo">
+            <div class="summary-hours-collapsed">
+              <h3>Hours<p>130</p></h3>
+              <i class="material-icons">chevron_right</i>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="project-summary" tabindex="-1" role="dialog" aria-labelledby="#project-summary-label" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="project-summary-label">Project Summary</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="material-icons">chevron_right</i>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="project-summary-modal">
+                  <div class="client-logo-container">
+                    <img src="images/pngs/client_logos/without_border/justenough-logo@2x.png" alt="Client Logo">
+                  </div>
+                  <div class="project-summary-details">
+                    <div class="summary-details-header">
+                      <h2>August Retainer</h2>
+                    </div>
+                    <ul class="summary-details-data">
+                      <li class="summary-data-category">
+                        <h3>Budget <p class="data-value">150 000.00</p></h3>
+                      </li>
+                      <li class="summary-data-category">
+                        <h3>Hours <p class="data-value">130</p></h3>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="project-summary-invoice-container">
+                    <div class="no-invoice">
+                      <div class="border-detail"></div>
+                      <div class="info-icon">i</div>
+                      <p>No Invoice Found</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project-setup-widget">
+          <div class="project-setup-steps">
+            <div class="setup-step active">
+              <div class="step-number"><p>1</p></div>
+              <div class="step-connection"></div>
+              <div class="step-title">Setup</div>
+
+            </div>
+            <div class="setup-step">
+              <div class="step-number"><p>2</p></div>
+              <div class="step-connection"></div>
+              <div class="step-title">Milestone</div>
+            </div>
+            <div class="setup-step">
+              <div class="step-number"><p>3</p></div>
+              <div class="step-connection"></div>
+              <div class="step-title">Team Selection</div>
+            </div>
+            <div class="setup-step">
+              <div class="step-number"><p>4</p></div>
+              <div class="step-title">Forecast</div>
+            </div>
+          </div>
+          <div class="project-setup-options-container">
+            <div class="setup-options-header">
+              <h1>Setup</h1>
+            </div>
+            <div class="setup-option select-general">
+              <div class="setup-option-title">
+                Select the project General
+              </div>
+              <div class="setup-option-employee-container">
+                <ul class="employee-list">
+                  <li class="employee-card" id="employee1">
+                    <div class="employee-thumbnail">
+                      <img src="http://via.placeholder.com/108x80" />
+                    </div>
+                    <div class="employee-name">
+                      Name
+                    </div>
+                  </li>
+                  <li class="employee-card" id="employee2">
+                    <div class="employee-thumbnail">
+                      <img src="http://via.placeholder.com/108x80" />
+                    </div>
+                    <div class="employee-name">
+                      Vanessa
+                    </div>
+                  </li>
+                  <li class="employee-card" id="employee3">
+                    <div class="employee-thumbnail">
+                      <img src="http://via.placeholder.com/108x80" />
+                    </div>
+                    <div class="employee-name">
+                      Ruth
+                    </div>
+                  </li>
+                  <li class="employee-card" id="employee4">
+                    <div class="employee-thumbnail">
+                      <img src="http://via.placeholder.com/108x80" />
+                    </div>
+                    <div class="employee-name">
+                      Cobus
+                    </div>
+                  </li>
+                  <li class="employee-card" id="employee5">
+                    <div class="employee-thumbnail">
+                      <img src="http://via.placeholder.com/108x80" />
+                    </div>
+                    <div class="employee-name">
+                      Micaela
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="setup-option select-commander">
+              <div class="setup-option-title">
+                Select the project Commander-in-chief
+              </div>
+              <div class="setup-option-employee-container">
+                <ul class="employee-list">
+                  <li class="employee-card" id="employee6">
+                    <div class="employee-thumbnail">
+                      <img src="http://via.placeholder.com/108x80" />
+                    </div>
+                    <div class="employee-name">
+                      Werner
+                    </div>
+                  </li>
+                  <li class="employee-card" id="employee7">
+                    <div class="employee-thumbnail">
+                      <img src="http://via.placeholder.com/108x80" />
+                    </div>
+                    <div class="employee-name">
+                      Cobus
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="setup-widget-controls-container">
+            <a href="#" class="widget-button" id="cancel">
+              Cancel
+            </a>
+            <a href="#" class="widget-button" id="next">
+              Next
+            </a>
+          </div>
+          <div class="isoflow-credit">
+            <img src="images/svgs/iso-cred.svg" alt="Isoflow Credit" />
+          </div>
+        </div>
+      </div>
+      <!-- collapsible side bar -->
+      <div class="wrapper">
+        <nav id="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <div class="sidebar-collapse">
+                  <img id="sidebar-collapse-button" src="images/svgs/close.svg" alt="Close Button" />
+                </div>
+                <div class="sidebar-header-tabs">
+                  <div class="sidebar-tab reviews active">
+                    Review
+                    <div class="sidebar-tab-num">3</div>
+                    <div class="sidebar-tab-underline"></div>
+                  </div>
+                  <div class="sidebar-tab invoices">
+                    Invoices
+                    <div class="sidebar-tab-num">2</div>
+                    <div class="sidebar-tab-underline"></div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Links -->
+            <ul class="sidebar-reviews-panel-container active">
+                <li class="sidebar-notification-panel">
+                  <a href="#">
+                    <div class="review-visual">25%</div>
+                    <div class="review-details">
+                      <span class="review-date">28-06-2017</span>
+                      <span class="review-subject">BulkSMS Website Application</span>
+                      <span class="review-status">Ready to Review</span>
+                      <span class="review-subdetail">UX-5 Screen Sign Off</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="sidebar-notification-panel active">
+                  <a href="#">
+                    <div class="review-visual">75%</div>
+                    <div class="review-details">
+                      <span class="review-date">28-06-2017</span>
+                      <span class="review-subject">Karri Branding</span>
+                      <span class="review-status">Ready to Review</span>
+                      <span class="review-subdetail">UX-SCC</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="sidebar-notification-panel">
+                  <a href="#">
+                    <div class="review-visual">100%</div>
+                    <div class="review-details">
+                      <span class="review-date">28-06-2017</span>
+                      <span class="review-status">BulkSMS Website Application</span>
+                      <span class="review-subject">Ready to Review</span>
+                      <span class="review-subdetail">UX-SCC</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="sidebar-notification-panel">
+                  <a href="#">
+                    <div class="review-visual add-new">
+                      <i class="material-icons">add</i>
+                    </div>
+                    <div class="review-details">
+                      <span class="review-date">28-06-2017</span>
+                      <span class="review-subject">Yoco Website</span>
+                      <span class="review-status">Ready to Review</span>
+                    </div>
+                  </a>
+                </li>
+            </ul>
+            <ul class="sidebar-invoices-panel-container">
+                <li class="sidebar-notification-panel">
+                  <a href="#">
+                    <div class="review-visual">25%</div>
+                    <div class="review-details">
+                      <span class="review-date">28-06-2017</span>
+                      <span class="review-subject">BulkSMS Website Application</span>
+                      <span class="review-status">Invoices</span>
+                      <span class="review-subdetail">UX-5 Screen Sign Off</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="sidebar-notification-panel active">
+                  <a href="#">
+                    <div class="review-visual">75%</div>
+                    <div class="review-details">
+                      <span class="review-date">28-06-2017</span>
+                      <span class="review-subject">Karri Branding</span>
+                      <span class="review-status">Invoices</span>
+                      <span class="review-subdetail">UX-SCC</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="sidebar-notification-panel">
+                  <a href="#">
+                    <div class="review-visual">100%</div>
+                    <div class="review-details">
+                      <span class="review-date">28-06-2017</span>
+                      <span class="review-status">BulkSMS Website Application</span>
+                      <span class="review-subject">Invoices</span>
+                      <span class="review-subdetail">UX-SCC</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="sidebar-notification-panel">
+                  <a href="#">
+                    <div class="review-visual add-new">
+                      <i class="material-icons">add</i>
+                    </div>
+                    <div class="review-details">
+                      <span class="review-date">28-06-2017</span>
+                      <span class="review-subject">Yoco Website</span>
+                      <span class="review-status">Invoices</span>
+                    </div>
+                  </a>
+                </li>
+            </ul>
+        </nav>
+      </div>
+    </main>
+    <div class="portfolio-modal">
+      <div class="modal-content">
+        <img class="close-modal" src="images/svgs/close.svg" alt="Close Button" />
+        <h1>Notice</h1>
+        <p>This website is still in progress, therefore webpages should be accessed by manually entering the URL paths below or by clicking on one.</p>
+        <br>
+        <p><a href="/Dashboard/clients.html" target="_blank">.. /clients.html</a></p>
+        <p><a href="/Dashboard/project-setup-step-1.html" target="_blank">.. /project-setup-step-1.html</a></p>
+        <p><a href="/Dashboard/project-setup-step-2.html" target="_blank">.. /project-setup-step-2.html</a></p>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+
+  <script src="js/sidebar.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/project_setup_widget.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/modal_portfolio.js"></script>
+
+</html>

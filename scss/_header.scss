@@ -1,0 +1,114 @@
+.dashboard-header {
+  padding: 18px 25px;
+
+  @media screen and (max-width: 900px) {
+    padding: 31px 15px 29px 15px;
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 31px 5px 29px 5px;
+  }
+
+  .container {
+    width: 100%;
+    a {
+      text-decoration: none;
+
+      .company-logo {
+        width: 50px;
+        height: 50px;
+
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.profile-ctas {
+  display: inline-block;
+  float: right;
+
+  @media screen and (max-width: 900px) {
+
+    .profile-dropdown {
+      display: none;
+    }
+  }
+}
+
+.notifications {
+
+  display: inline-block;
+  padding-right: 20px;
+  vertical-align: middle;
+  margin-top: 7px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 900px) {
+    padding-right: 0;
+    padding-bottom: 4px;
+  }
+
+  .notification-bubble {
+    background-color: #2e94ff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    padding-top: 1px;
+
+    p.notification-num {
+      font-family: 'AvenirNext-Condensed', sans-serif;
+      color: #ffffff;
+      font-size: 13px;
+      left: 6.3px;
+      bottom: 0.51px;
+      margin: 0;
+      position: absolute;
+    }
+  }
+
+  .notification-icon {
+    display: inline;
+  }
+}
+
+.profile-dropdown {
+  display: inline-block;
+  border-left: 1px solid #e6e8eb;
+  padding-left: 25px;
+
+  .profile-photo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile-dropdown-info {
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: middle;
+
+    .profile-name {
+      color: #6a7c8f;
+      font-size: 15px;
+      margin: 0;
+      font-family: 'MaisonNeue-Demi', sans-serif;
+    }
+
+    h2 {
+      color: #bdc3c7;
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+
+  .profile-dropdown-cta {
+    display: inline-block;
+  }
+}

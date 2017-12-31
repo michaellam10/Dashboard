@@ -1,0 +1,231 @@
+.setup-option-details-container {
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #bdc3c7;
+    font-size: 15px;
+    font-family: 'MaisonNeue-Book', sans-serif;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #bdc3c7;
+    font-size: 15px;
+    font-family: 'MaisonNeue-Book', sans-serif;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #bdc3c7;
+    font-size: 15px;
+    font-family: 'MaisonNeue-Book', sans-serif;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #bdc3c7;
+    font-size: 15px;
+    font-family: 'MaisonNeue-Book', sans-serif;
+  }
+
+  .milestone-reviews {
+    padding-left: 0;
+    margin: 0;
+
+    .milestone-review-num {
+      display: inline-block;
+      padding: 10.5px 19px;
+      border-radius: 3px;
+      border: solid 1px #d9ddde;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      font-family: 'MaisonNeue-Light', sans-serif;
+      font-size: 18px;
+      color: #1b2733;
+      transition: 0.2s;
+
+      &:hover {
+        border-color: #2e94ff;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      &.selected {
+        background-color: #2e94ff;
+        border-color: #2e94ff;
+        color: #ffffff;
+        transition: 0.2s;
+      }
+    }
+
+    .milestone-add-review {
+
+      border-radius: 3px;
+      background-color: #f2f3f4;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -1px;
+      padding: 14px 19px;
+      color: #6a7c8f;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .material-icons {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 13px;
+      }
+
+      p {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+
+    .milestone-conversation-marker {
+      width: 100% !important;
+      flex-direction: column;
+      margin-right: 0;
+      margin-bottom: 15px;
+
+      .conversation-notes {
+        width: 100% !important;
+      }
+
+      .conversation-details {
+        width: 320px !important;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .milestone-conversation-marker {
+    margin-bottom: 30px;
+    display: flex;
+
+    .conversation-details {
+      height: 50px;
+      width: 36%;
+      display: flex;
+      border: solid 1px #e6e8eb;
+      border-radius: 3px;
+      margin-right: 50px;
+      position: relative;
+      overflow: hidden;
+
+      @media screen and (max-width: 1400px) {
+        width: 45%;
+      }
+
+      .conversation-checkpoint {
+        background-color: #f7f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        min-width: 80px;
+
+        p {
+          font-family: 'MaisonNeue-Light', sans-serif;
+          margin: 0;
+        }
+
+      }
+
+      .gj-datepicker {
+
+        .input-group-addon {
+          background-color: transparent;
+          border: none;
+          padding-right: 87%;
+          padding-left: 15px;
+          padding-bottom: 10px;
+          z-index: 2;
+          display: flex;
+          align-items: center;
+          border-left: solid 1px #e6e8eb;
+        }
+
+        .datepicker {
+          position: absolute;
+          left: 49px;
+          width: calc(100% - 49px);
+          z-index: 1;
+          border-left: solid 1px #e6e8eb !important;
+        }
+      }
+    }
+
+    .conversation-notes {
+      border-radius: 3px;
+      border: solid 1px #e6e8eb;
+      min-height: 80px;
+      padding: 15px;
+      width: 64%;
+      color: #6a7c8f;
+
+      @media screen and (max-width: 1400px) {
+        width: 55%;
+      }
+    }
+  }
+}
+
+.milestone-review-documentation {
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  border: solid 1px #e6e8eb;
+
+  .empty {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    img {
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-family: 'MaisonNeue-Light', sans-serif;
+      letter-spacing: -0.5px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-family: 'MaisonNeue-Book', sans-serif;
+      color: #6a7c8f;
+
+      a {
+        text-decoration: none;
+        margin-bottom: 1px;
+        border-bottom: 1px solid #6a7c8f;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.milestone-tracking {
+  height: 50px;
+  border-radius: 3px;
+
+  .input-group-addon {
+    width: 50px;
+    background-color: #ffffff;
+    border: solid 1px #e6e8eb;
+
+    &:first-child {
+      border-right: solid 1px #e6e8eb;
+    }
+
+  }
+  .form-control {
+    height: 50px;
+    box-shadow: none;
+    border: solid 1px #e6e8eb;
+    border-left: none;
+  }
+}

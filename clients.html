@@ -1,0 +1,1304 @@
+<!doctype html>
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Dashboard | Clients</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="container">
+        <a class="isoflow-logo" href="#">
+          <img class="company-logo" src="images/svgs/company-profile.svg" alt="Isoflow Logo">
+        </a>
+        <div class="nav-bar-toggle-contain">
+            <button type="button" class="nav-bar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <ul id="nav-bar">
+          <li class="nav-bar-mobile-header">
+            <img id="navbar-collapse-button" src="images/svgs/close.svg" alt="Close Button" />
+            <div class="profile-dropdown">
+              <img class="profile-photo" src="images/pngs/profile_photo/profile@2x.png" alt="Profile Photo">
+              <div class="profile-dropdown-info">
+                <h1 class="profile-name">Neal</h1>
+                <!-- <h2 class="profile-position">UI Designer</h2> -->
+              </div>
+              <!-- <div class="profile-dropdown-cta">
+                <a class="profile-dropdown-icon">
+                  <img src="images/svgs/ic-profile-drop-down.svg">
+                </a>
+              </div> -->
+            </div>
+          </li>
+          <li class="nav-link">
+            <a href="#">Dashboard
+              <div class="nav-item-underline"></div>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Clients
+              <div class="nav-item-underline"></div>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Projects
+              <div class="nav-item-underline"></div>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Team Leads
+              <div class="nav-item-underline"></div>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">Team Members
+              <div class="nav-item-underline"></div>
+            </a>
+          </li>
+          <li class="nav-link" id="sign-out">
+            <hr />
+            <a href="#">Sign Out</a>
+          </li>
+        </ul>
+        <div class="profile-ctas">
+          <div class="notifications">
+            <div class="notification-bubble">
+              <!-- <div class="notification-bubble-extra"></div> -->
+              <p class="notification-num">8</p>
+            </div>
+            <div class="notification-icon">
+              <img src="/images/svgs/ic-notification.svg" alt="Notification Icon">
+            </div>
+          </div>
+          <div class="profile-dropdown">
+            <img class="profile-photo" src="images/pngs/profile_photo/profile@2x.png" alt="Profile Photo">
+            <div class="profile-dropdown-info">
+              <h1 class="profile-name">Neal</h1>
+              <!-- <h2 class="profile-position">UI Designer</h2> -->
+            </div>
+            <!-- <div class="profile-dropdown-cta">
+              <a class="profile-dropdown-icon">
+                <img src="images/svgs/ic-profile-drop-down.svg">
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="client-grid">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 filter-row">
+            <div class="filter-options">
+              <div class="dropdown sort-by">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Alphabetical
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <div class="dropdown filters">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Filter
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="client-row-container">
+          <div class="row" id="client-row" role="tablist">
+            <div class="card client-card" id="client1">
+                <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/without_border/10x-investments-logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-excellent">100%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card client-card" id="client2">
+              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="client-project-panel">
+                  <div class="client-logo-container">
+                    <div class="client-logo">
+                      <img src="images/pngs/client_logos/santam/santam_logo@2x.png" alt="Client Logo">
+                    </div>
+                  </div>
+                  <div class="client-card-data">
+                    <div class="project-completion">
+                      <h2 class="completion-value">100%</h2>
+                      <p>Complete</p>
+                    </div>
+                    <div class="project-forecast">
+                      <h2 class="forecast-value">90%</h2>
+                      <p>Forecasted</p>
+                    </div>
+                    <div class="project-budget">
+                      <h2 class="budget-value">500K</h2>
+                      <p>Budget</p>
+                    </div>
+                    <div class="project-profit">
+                      <h2 class="profit-value profit-excellent">100%</h2>
+                      <p>Profit</p>
+                    </div>
+                  </div>
+                  <div class="client-expand-triangle"></div>
+                </div>
+              </a>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#client-row">
+                <div class="client-projects">
+                  <div class="project-card-container">
+                    <div class="project-card">
+                      <div class="project-title">
+                        <div class="project-status-color status-excellent"></div>
+                        Marketing Website
+                      </div>
+                      <div class="project-card-data">
+                        <div class="project-completion">
+                          <h2 class="completion-value">100%</h2>
+                          <p>Complete</p>
+                        </div>
+                        <div class="project-forecast">
+                          <h2 class="forecast-value">90%</h2>
+                          <p>Forecasted</p>
+                        </div>
+                        <div class="project-budget">
+                          <h2 class="budget-value">500K</h2>
+                          <p>Budget</p>
+                        </div>
+                        <div class="project-profit">
+                          <h2 class="profit-value profit-excellent">100%</h2>
+                          <p>Profit</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-card">
+                      <div class="project-title">
+                        <div class="project-status-color status-excellent"></div>
+                        Mobile Application
+                      </div>
+                      <div class="project-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-excellent">100%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card client-card" id="client3">
+                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/without_border/bulksms-logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-moderate">45%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-moderate"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-moderate">45%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-moderate"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-moderate">45%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card client-card" id="client4">
+                <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/without_border/justenough-logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-excellent">100%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card client-card" id="client5">
+                <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/without_border/karri-logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-excellent">100%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card client-card" id="client6">
+                <a class="collapsed" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/without_border/nedgroup-investments-logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-poor">10%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-poor"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-poor">10%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-poor"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-poor">10%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card client-card" id="client7">
+                <a class="collapsed" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/without_border/nubabi-logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-poor">10%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-poor"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-poor">10%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-poor"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-poor">10%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card client-card" id="client8">
+                <a class="collapsed" data-toggle="collapse" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/without_border/sasol-logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-excellent">100%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card client-card" id="client9">
+                <a class="collapsed" data-toggle="collapse" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/without_border/with-grace-logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-moderate">45%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-moderate"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-moderate">45%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-moderate"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-moderate">45%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card client-card" id="client10">
+                <a class="collapsed" data-toggle="collapse" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/without_border/yoco-logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-excellent">100%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- <div class="card client-card" id="client11">
+                <a class="collapsed" data-toggle="collapse" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/santam/santam_logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-excellent">100%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseEleven" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card client-card" id="client12">
+                <a class="collapsed" data-toggle="collapse" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                  <div class="client-project-panel">
+                    <div class="client-logo-container">
+                      <div class="client-logo">
+                        <img src="images/pngs/client_logos/santam/santam_logo@2x.png" alt="Client Logo">
+                      </div>
+                    </div>
+                    <div class="client-card-data">
+                      <div class="project-completion">
+                        <h2 class="completion-value">100%</h2>
+                        <p>Complete</p>
+                      </div>
+                      <div class="project-forecast">
+                        <h2 class="forecast-value">90%</h2>
+                        <p>Forecasted</p>
+                      </div>
+                      <div class="project-budget">
+                        <h2 class="budget-value">500K</h2>
+                        <p>Budget</p>
+                      </div>
+                      <div class="project-profit">
+                        <h2 class="profit-value profit-excellent">100%</h2>
+                        <p>Profit</p>
+                      </div>
+                    </div>
+                    <div class="client-expand-triangle"></div>
+                  </div>
+                </a>
+                <div id="collapseTwelve" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#client-row">
+                  <div class="client-projects">
+                    <div class="project-card-container">
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Marketing Website
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-card">
+                        <div class="project-title">
+                          <div class="project-status-color status-excellent"></div>
+                          Mobile Application
+                        </div>
+                        <div class="project-card-data">
+                          <div class="project-completion">
+                            <h2 class="completion-value">100%</h2>
+                            <p>Complete</p>
+                          </div>
+                          <div class="project-forecast">
+                            <h2 class="forecast-value">90%</h2>
+                            <p>Forecasted</p>
+                          </div>
+                          <div class="project-budget">
+                            <h2 class="budget-value">500K</h2>
+                            <p>Budget</p>
+                          </div>
+                          <div class="project-profit">
+                            <h2 class="profit-value profit-excellent">100%</h2>
+                            <p>Profit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div> -->
+
+            <!-- aligns last row of flexbox -->
+            <div class="card flex-dummy"></div>
+            <div class="card flex-dummy"></div>
+            <div class="card flex-dummy"></div>
+            <div class="card flex-dummy"></div>
+            <div class="card flex-dummy"></div>
+            <!-------------------------------->
+
+          </div>
+        </div>
+
+        <!-- collapsible side bar -->
+        <div class="wrapper">
+          <nav id="sidebar">
+              <!-- Sidebar Header -->
+              <div class="sidebar-header">
+                  <div class="sidebar-collapse">
+                    <img id="sidebar-collapse-button" src="images/svgs/close.svg" alt="Close Button" />
+                  </div>
+                  <div class="sidebar-header-tabs">
+                    <div class="sidebar-tab reviews active">
+                      Review
+                      <div class="sidebar-tab-num">3</div>
+                      <div class="sidebar-tab-underline"></div>
+                    </div>
+                    <div class="sidebar-tab invoices">
+                      Invoices
+                      <div class="sidebar-tab-num">2</div>
+                      <div class="sidebar-tab-underline"></div>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- Sidebar Links -->
+              <ul class="sidebar-reviews-panel-container active">
+                  <li class="sidebar-notification-panel">
+                    <a href="#">
+                      <div class="review-visual">25%</div>
+                      <div class="review-details">
+                        <span class="review-date">28-06-2017</span>
+                        <span class="review-subject">BulkSMS Website Application</span>
+                        <span class="review-status">Ready to Review</span>
+                        <span class="review-subdetail">UX-5 Screen Sign Off</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sidebar-notification-panel active">
+                    <a href="#">
+                      <div class="review-visual">75%</div>
+                      <div class="review-details">
+                        <span class="review-date">28-06-2017</span>
+                        <span class="review-subject">Karri Branding</span>
+                        <span class="review-status">Ready to Review</span>
+                        <span class="review-subdetail">UX-SCC</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sidebar-notification-panel">
+                    <a href="#">
+                      <div class="review-visual">100%</div>
+                      <div class="review-details">
+                        <span class="review-date">28-06-2017</span>
+                        <span class="review-status">BulkSMS Website Application</span>
+                        <span class="review-subject">Ready to Review</span>
+                        <span class="review-subdetail">UX-SCC</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sidebar-notification-panel">
+                    <a href="#">
+                      <div class="review-visual add-new">
+                        <i class="material-icons">add</i>
+                      </div>
+                      <div class="review-details">
+                        <span class="review-date">28-06-2017</span>
+                        <span class="review-subject">Yoco Website</span>
+                        <span class="review-status">Ready to Review</span>
+                      </div>
+                    </a>
+                  </li>
+              </ul>
+              <ul class="sidebar-invoices-panel-container">
+                  <li class="sidebar-notification-panel">
+                    <a href="#">
+                      <div class="review-visual">25%</div>
+                      <div class="review-details">
+                        <span class="review-date">28-06-2017</span>
+                        <span class="review-subject">BulkSMS Website Application</span>
+                        <span class="review-status">Invoices</span>
+                        <span class="review-subdetail">UX-5 Screen Sign Off</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sidebar-notification-panel active">
+                    <a href="#">
+                      <div class="review-visual">75%</div>
+                      <div class="review-details">
+                        <span class="review-date">28-06-2017</span>
+                        <span class="review-subject">Karri Branding</span>
+                        <span class="review-status">Invoices</span>
+                        <span class="review-subdetail">UX-SCC</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sidebar-notification-panel">
+                    <a href="#">
+                      <div class="review-visual">100%</div>
+                      <div class="review-details">
+                        <span class="review-date">28-06-2017</span>
+                        <span class="review-status">BulkSMS Website Application</span>
+                        <span class="review-subject">Invoices</span>
+                        <span class="review-subdetail">UX-SCC</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="sidebar-notification-panel">
+                    <a href="#">
+                      <div class="review-visual add-new">
+                        <i class="material-icons">add</i>
+                      </div>
+                      <div class="review-details">
+                        <span class="review-date">28-06-2017</span>
+                        <span class="review-subject">Yoco Website</span>
+                        <span class="review-status">Invoices</span>
+                      </div>
+                    </a>
+                  </li>
+              </ul>
+          </nav>
+        </div>
+    </main>
+    <div class="portfolio-modal">
+      <div class="modal-content">
+        <img class="close-modal" src="images/svgs/close.svg" alt="Close Button" />
+        <h1>Notice</h1>
+        <p>This website is still in progress, therefore webpages should be accessed by manually entering the URL paths below or by clicking on one.</p>
+        <br>
+        <p><a href="/Dashboard/clients.html" target="_blank">.. /clients.html</a></p>
+        <p><a href="/Dashboard/project-setup-step-1.html" target="_blank">.. /project-setup-step-1.html</a></p>
+        <p><a href="/Dashboard/project-setup-step-2.html" target="_blank">.. /project-setup-step-2.html</a></p>
+        <br>
+        <p class="modal-note">Note: The statistics displayed on this page are not meant to portray accurate data but rather filler copy to display various design elements.</p>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+  <script src="js/client_card_expand.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modal_portfolio.js"></script>
+
+</html>

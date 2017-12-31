@@ -1,0 +1,226 @@
+#sidebar {
+    transform: translateX(340px);
+    height: 100vh;
+    width: 340px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+    transition: 0.45s ease;
+}
+
+#sidebar.active {
+    transform: translateX(0);
+    transition: 0.45s ease;
+    z-index: 13;
+    box-shadow: 0 3px 28px 0 rgba(33, 47, 56, 0.18);
+}
+
+#sidebar {
+  .sidebar-header {
+
+    .sidebar-collapse {
+      padding-top: 20px;
+      padding-right: 22px;
+
+      #sidebar-collapse-button {
+        float: right;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.sidebar-header {
+    .sidebar-header-tabs {
+      display: flex;
+      margin-top: 41px;
+
+      .sidebar-tab {
+        width: calc(100% / 2);
+        display: flex;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        position: relative;
+        text-transform: uppercase;
+        font-family: 'MaisonNeue-Light', sans-serif;
+        color: #a3a3a3;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        border-bottom: solid 1px #c8d4d8;
+        z-index: 15;
+
+        .sidebar-tab-num {
+          position: absolute;
+          border-radius: 100px;
+          background-color: #2e94ff;
+          font-size: 11px;
+          width: 15px;
+          height: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+          top: 1px;
+          font-family: 'MaisonNeue-Light', sans-serif !important;
+        }
+
+        .sidebar-tab-underline {
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+        }
+
+        &.active {
+          color: #414142;
+          font-family: 'MaisonNeue-Demi', sans-serif;
+          letter-spacing: 1.2px;
+
+          .sidebar-tab-underline {
+            background-color: #414142;
+          }
+        }
+
+        &.reviews .sidebar-tab-num {
+          left: 111px;
+        }
+
+        &.invoices .sidebar-tab-num {
+          left: 116px;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          // .sidebar-tab-underline {
+          //   background-color: #414142;
+          // }
+        }
+      }
+    }
+}
+
+.sidebar-reviews-panel-container, .sidebar-invoices-panel-container {
+  padding-left: 0;
+  list-style-type: none;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  .sidebar-notification-panel {
+    border-bottom: solid 1px #ebf0f2;
+    font-size: 14px;
+    font-family: 'MaisonNeue-Light', sans-serif;
+    letter-spacing: -0.1px;
+    color: #414142;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      padding-top: 26px;
+      padding-bottom: 24px;
+      padding-left: 36px;
+      padding-right: 38px;
+      border-left: solid 3px #ffffff;
+
+      &:hover {
+        border-color: #2e94ff;
+        transition: 0.2s ease;
+
+        .review-visual {
+          border-color: #414142;
+          color: #414142;
+          transition: 0.2s ease;
+        }
+      }
+    }
+  }
+}
+
+
+
+.sidebar-notification-panel {
+
+  .review-visual {
+    border-radius: 100px;
+    border: solid 1px rgba(163, 163, 163, 0.25);
+    color: #a3a3a3;
+    width: 47.5px;
+    height: 47.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+  }
+
+  .review-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #414142;
+
+    .review-date {
+      color: #a3a3a3;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  #sidebar .sidebar-header {
+    padding: 18px 30px;
+    border-bottom: solid 1px #c8d4d8;
+
+
+    .sidebar-collapse {
+      padding-top: 0;
+      position: relative;
+
+      #sidebar-collapse-button {
+        margin-top: 9px;
+        position: absolute;
+        right: -4px;
+      }
+    }
+
+    .sidebar-header-tabs {
+      margin-top: 0;
+
+      .sidebar-tab {
+        border: 0;
+        width: auto;
+        margin-right: 40px;
+
+        .sidebar-tab-underline {
+          bottom: -19px;
+        }
+      }
+    }
+  }
+
+  #sidebar .sidebar-notification-panel {
+    a {
+      padding-left: 27px;
+      padding-right: 30px;
+    }
+  }
+
+  .sidebar-header .sidebar-header-tabs .sidebar-tab.reviews .sidebar-tab-num {
+    left: 55px;
+  }
+
+  .sidebar-header .sidebar-header-tabs .sidebar-tab.invoices .sidebar-tab-num {
+    left: 66px;
+  }
+}

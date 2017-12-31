@@ -1,0 +1,337 @@
+.project-setup-container {
+  padding-top: 30px;
+  padding-bottom: 120px;
+
+  font-family: 'MaisonNeue', sans-serif;
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-summary, .project-summary-collapsed, .project-summary-modal {
+    padding: 30px;
+    font-size: 15px;
+    width: 320px;
+    background-color: #ffffff;
+    margin-right: 30px;
+    border: solid 1px #e6e8eb;
+    border-radius: 3px;
+
+    .client-logo-container {
+      margin-bottom: 30px;
+      border: solid 1px #e6e8eb;
+      padding-top: 28px;
+      padding-bottom: 27px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-height: 45px;
+      }
+
+      .summary-hours-collapsed {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+
+        h3 {
+          display: flex;
+          color: #6a7c8f;
+          font-size: 15px;
+          font-family: 'MaisonNeue-Book', sans-serif;
+          margin: 0;
+
+          p {
+            font-size: 15px;
+            color: #1b2733;
+            font-family: 'MaisonNeue-Bold', sans-serif;
+            margin: 0;
+            margin-left: 10px;
+            margin-right: 20px;
+          }
+        }
+
+        .material-icons {
+          font-size: 22px;
+          width: 22px;
+          height: 22px;
+          color: #1b2733;
+        }
+      }
+    }
+  }
+}
+
+.project-setup-container .project-summary-modal {
+  width: 100%;
+  border: none;
+  padding: 15px;
+}
+
+.modal.fade {
+  transition: opacity 0.2s linear;
+  transform: translate(0,0);
+
+  .modal-dialog {
+    margin: 0 auto;
+    margin-top: 106px;
+
+    .modal-content {
+      border-radius: 3px;
+      border: solid 1px #e6e8eb;
+      width: calc(100% - 40px);
+      margin: 0 auto;
+      margin-top: 50px;
+
+      .modal-header {
+        padding: 20px;
+
+        .modal-title {
+          font-family: 'MaisonNeue-Light', sans-serif;
+          color: #1b2733;
+          font-size: 18px;
+        }
+
+        .material-icons {
+          transform: rotate(-90deg);
+          color: #1b2733;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.project-setup-container {
+  .project-summary-details {
+    .summary-details-header {
+      margin-bottom: 10px;
+
+      h2 {
+        color: #1b2733;
+        font-size: 15px;
+        font-family: 'MaisonNeue-Medium', sans-serif;
+      }
+    }
+
+    .summary-details-data {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 0;
+      border-top: solid 1px #e6e8eb;
+      margin: 0;
+
+      .summary-data-category {
+        list-style-type: none;
+        position: relative;
+        margin-bottom: 10px;
+
+        h3 {
+         font-size: 15px;
+         color: #6a7c8f;
+         font-family: 'MaisonNeue-Book', sans-serif;
+         margin: 0;
+
+         p {
+           position: absolute;
+           right: 0;
+           top: 0;
+           color: #1b2733;
+           font-family: 'MaisonNeue-Medium', sans-serif;
+         }
+        }
+      }
+    }
+  }
+
+  .project-summary-invoice-container {
+    border: solid 1px #e5e5e5;
+    background-color: #f7f8f8;
+    border-radius: 3px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    margin-bottom: 31px;
+
+    .no-invoice, .invoices {
+      display: flex;
+      align-items: center;
+
+      .border-detail {
+        width: 3px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 40px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        background-color: #ff6158;
+      }
+
+      .info-icon {
+        height: 14px;
+        width: 14px;
+        background-color: #ff6158;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        color: #ffffff;
+        font-weight: 300;
+        border-radius: 12.5px;
+        margin-right: 6.3px;
+
+
+      }
+
+      p {
+        font-size: 12px;
+        color: #6a7c8f;
+        font-family: 'MaisonNeue-BookItalic', sans-serif;
+        margin: 0;
+        position: absolute;
+        left: 38px;
+        top: 13px;
+      }
+    }
+
+    .invoices .info-icon {
+      background: none;
+    }
+  }
+
+  .project-summary-setup-details {
+    h2 {
+      color: #1b2733;
+      font-size: 15px;
+      font-family: 'MaisonNeue-Medium', sans-serif;
+      padding-bottom: 9px;
+      border-bottom: solid 1px #e6e8eb;
+      margin: 0;
+      position: relative;
+
+      .material-icons {
+        position: absolute;
+        right: 0;
+        font-size: 14px;
+        color: #6a7c8f;
+      }
+    }
+
+    .project-personnel {
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .project-person {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 15px;
+          border-radius: 3px;
+        }
+
+        .project-person-details {
+          display: flex;
+          flex-direction: column;
+
+          .person-role {
+            font-family: 'MaisonNeue-Medium', sans-serif;
+            color: #1b2733;
+          }
+
+          .person-name {
+            color: #6a7c8f;
+          }
+        }
+      }
+    }
+  }
+}
+
+.project-setup-container .project-summary-collapsed {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 30px;
+  padding: 16px 20px;
+  display: none;
+
+  .project-summary-details, .project-summary-invoice-container, .project-summary-setup-details {
+    display: none;
+  }
+
+  .client-logo-container {
+    padding: 0;
+    margin: 0;
+    border: none;
+    position: relative;
+    justify-content: flex-start;
+
+    .summary-hours-collapsed {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project-setup-container {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .project-summary {
+      display: none;
+    }
+
+    .project-summary-collapsed {
+      display: block;
+    }
+
+    .project-setup-widget {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project-setup-container {
+    padding: 0;
+
+    .container {
+      padding: 0;
+    }
+
+    .project-summary-collapsed {
+      margin: 20px;
+      box-sizing: border-box;
+      width: calc(100% - 40px);
+
+      .client-logo-container img {
+        max-height: 30px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .project-setup-widget .project-setup-steps .setup-step .step-title {
+      display: none;
+    }
+  }
+}

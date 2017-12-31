@@ -1,0 +1,191 @@
+#sidebar {
+  -webkit-transform: translateX(340px);
+  -ms-transform: translateX(340px);
+  transform: translateX(340px);
+  height: 100vh;
+  width: 340px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #ffffff;
+  -webkit-transition: 0.45s ease;
+  -o-transition: 0.45s ease;
+  transition: 0.45s ease; }
+
+#sidebar.active {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.45s ease;
+  -o-transition: 0.45s ease;
+  transition: 0.45s ease;
+  z-index: 13;
+  -webkit-box-shadow: 0 3px 28px 0 rgba(33, 47, 56, 0.18);
+  box-shadow: 0 3px 28px 0 rgba(33, 47, 56, 0.18); }
+
+#sidebar .sidebar-header .sidebar-collapse {
+  padding-top: 20px;
+  padding-right: 22px; }
+  #sidebar .sidebar-header .sidebar-collapse #sidebar-collapse-button {
+    float: right; }
+    #sidebar .sidebar-header .sidebar-collapse #sidebar-collapse-button:hover {
+      cursor: pointer; }
+
+.sidebar-header .sidebar-header-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 41px; }
+  .sidebar-header .sidebar-header-tabs .sidebar-tab {
+    width: calc(100% / 2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'MaisonNeue-Light', sans-serif;
+    color: #a3a3a3;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    border-bottom: solid 1px #c8d4d8;
+    z-index: 15; }
+    .sidebar-header .sidebar-header-tabs .sidebar-tab .sidebar-tab-num {
+      position: absolute;
+      border-radius: 100px;
+      background-color: #2e94ff;
+      font-size: 11px;
+      width: 15px;
+      height: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #ffffff;
+      top: 1px;
+      font-family: 'MaisonNeue-Light', sans-serif !important; }
+    .sidebar-header .sidebar-header-tabs .sidebar-tab .sidebar-tab-underline {
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      bottom: -3px;
+      left: 0; }
+    .sidebar-header .sidebar-header-tabs .sidebar-tab.active {
+      color: #414142;
+      font-family: 'MaisonNeue-Demi', sans-serif;
+      letter-spacing: 1.2px; }
+      .sidebar-header .sidebar-header-tabs .sidebar-tab.active .sidebar-tab-underline {
+        background-color: #414142; }
+    .sidebar-header .sidebar-header-tabs .sidebar-tab.reviews .sidebar-tab-num {
+      left: 111px; }
+    .sidebar-header .sidebar-header-tabs .sidebar-tab.invoices .sidebar-tab-num {
+      left: 116px; }
+    .sidebar-header .sidebar-header-tabs .sidebar-tab:hover {
+      cursor: pointer; }
+
+.sidebar-reviews-panel-container, .sidebar-invoices-panel-container {
+  padding-left: 0;
+  list-style-type: none;
+  display: none; }
+  .sidebar-reviews-panel-container.active, .sidebar-invoices-panel-container.active {
+    display: block; }
+  .sidebar-reviews-panel-container .sidebar-notification-panel, .sidebar-invoices-panel-container .sidebar-notification-panel {
+    border-bottom: solid 1px #ebf0f2;
+    font-size: 14px;
+    font-family: 'MaisonNeue-Light', sans-serif;
+    letter-spacing: -0.1px;
+    color: #414142; }
+    .sidebar-reviews-panel-container .sidebar-notification-panel a, .sidebar-invoices-panel-container .sidebar-notification-panel a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-decoration: none;
+      padding-top: 26px;
+      padding-bottom: 24px;
+      padding-left: 36px;
+      padding-right: 38px;
+      border-left: solid 3px #ffffff; }
+      .sidebar-reviews-panel-container .sidebar-notification-panel a:hover, .sidebar-invoices-panel-container .sidebar-notification-panel a:hover {
+        border-color: #2e94ff;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: 0.2s ease; }
+        .sidebar-reviews-panel-container .sidebar-notification-panel a:hover .review-visual, .sidebar-invoices-panel-container .sidebar-notification-panel a:hover .review-visual {
+          border-color: #414142;
+          color: #414142;
+          -webkit-transition: 0.2s ease;
+          -o-transition: 0.2s ease;
+          transition: 0.2s ease; }
+
+.sidebar-notification-panel .review-visual {
+  border-radius: 100px;
+  border: solid 1px rgba(163, 163, 163, 0.25);
+  color: #a3a3a3;
+  width: 47.5px;
+  height: 47.5px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 26px; }
+
+.sidebar-notification-panel .review-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #414142; }
+  .sidebar-notification-panel .review-details .review-date {
+    color: #a3a3a3;
+    margin-bottom: 5px; }
+
+@media screen and (max-width: 900px) {
+  #sidebar .sidebar-header {
+    padding: 18px 30px;
+    border-bottom: solid 1px #c8d4d8; }
+    #sidebar .sidebar-header .sidebar-collapse {
+      padding-top: 0;
+      position: relative; }
+      #sidebar .sidebar-header .sidebar-collapse #sidebar-collapse-button {
+        margin-top: 9px;
+        position: absolute;
+        right: -4px; }
+    #sidebar .sidebar-header .sidebar-header-tabs {
+      margin-top: 0; }
+      #sidebar .sidebar-header .sidebar-header-tabs .sidebar-tab {
+        border: 0;
+        width: auto;
+        margin-right: 40px; }
+        #sidebar .sidebar-header .sidebar-header-tabs .sidebar-tab .sidebar-tab-underline {
+          bottom: -19px; }
+  #sidebar .sidebar-notification-panel a {
+    padding-left: 27px;
+    padding-right: 30px; }
+  .sidebar-header .sidebar-header-tabs .sidebar-tab.reviews .sidebar-tab-num {
+    left: 55px; }
+  .sidebar-header .sidebar-header-tabs .sidebar-tab.invoices .sidebar-tab-num {
+    left: 66px; } }
